@@ -8,7 +8,7 @@ const port = 8000;
 let users;
 fs.readFile(path.resolve(__dirname, './data/users.json'), function(err, data) {
   console.log('reading file ... ');
-  if(err) throw err;
+  if (err) throw err;
   users = JSON.parse(data);
 })
 
